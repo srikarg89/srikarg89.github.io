@@ -21,10 +21,10 @@ repository               : "srikarg89/srikarg89.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "profile.jpg"
   name             : "Srikar Gouru"
   pronouns         : # example: "she/her"  
-  bio              : "Short biography for the left-hand sidebar"
+  bio              : "Solving planning and control problems in multi-agent robotic systems"
   location         : "Charlottesville, Virginia"
   employer         : "University of Virginia"
   uri              : # URL
@@ -58,7 +58,7 @@ author:
   keybase          : # Username
   instagram        : # Username
   lastfm           : # Username
-  linkedin         : # srikar-gouru-090244181
+  linkedin         : srikar-gouru-090244181
   mastodon         : # URL
   medium           : # URL
   pinterest        : # Username

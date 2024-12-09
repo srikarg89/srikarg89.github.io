@@ -145,6 +145,18 @@
     font-size: $type-size-5;
   }
 
+  /* semi-large button */
+
+  &--semi-large {
+    font-size: $type-size-5-5;
+  }
+  
+  /* medium button */
+
+  &--medium {
+    font-size: $type-size-6;
+  }
+
   /* small button */
 
   &--small {

@@ -1,6 +1,6 @@
 ---
-title: "Portfolio item number 1"
-excerpt: "Short description of portfolio item number 1<br/><img src='/images/500x300.png'>"
+title: "Cubie"
+excerpt: "A Rubik's Cube solving robot with solve times under 4 seconds.<br/><img src='/images/500x300.png'>"
 collection: portfolio
 ---
 

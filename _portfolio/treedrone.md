@@ -1,8 +1,7 @@
 ---
-title: "TreeDrone"
-excerpt: "A drone that measures the canopy coverage of an area.<br/><img src='/images/500x300.png'>"
+title: "TreeDrone: Measures canopy coverage of a neighborhood"
+excerpt: "<img src='/files/Frame58.png'>"
 collection: portfolio
 priority: 2
+link_only: https://github.com/srikarg89/TreeDrone
 ---
-
-This is an item in your portfolio. It can be have images or nice text. If you name the file .md, it will be parsed as markdown. If you name the file .html, it will be parsed as HTML. 

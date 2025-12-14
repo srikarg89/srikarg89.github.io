@@ -1,0 +1,4 @@
+- Fix data
+- Put images left, info right
+- Get better fonts
+- Make headshot part of background instead of it being a picture

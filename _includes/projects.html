@@ -1,0 +1,25 @@
+<section id="projects" class="section section-bio">
+  <div class="container section-inner">
+    <h2 class="section-title">Projects</h2>
+
+    {% for proj in site.data.projects %}
+      <article class="media-row {% if forloop.index0 | modulo:2 == 1 %}media-reverse{% endif %}">
+        <div class="media-left">
+          {% if proj.video %}
+            <div class="media-embed">
+              <iframe src="{{ proj.video }}" allowfullscreen></iframe>
+            </div>
+          {% else %}
+            <img src="{{ proj.image | relative_url }}" alt="{{ proj.title }}">
+          {% endif %}
+        </div>
+
+        <div class="media-right">
+          <h3>{{ proj.title }}</h3>
+          <p class="meta">{{ proj.short }}</p>
+          <p>{{ proj.description }}</p>
+        </div>
+      </article>
+    {% endfor %}
+  </div>
+</section>

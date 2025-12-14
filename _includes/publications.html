@@ -1,0 +1,25 @@
+<section id="publications" class="section section-alt">
+  <div class="container section-inner">
+    <h2 class="section-title">Publications</h2>
+
+    {% for pub in site.data.publications %}
+      <article class="media-row {% if forloop.index0 | modulo:2 == 1 %}media-reverse{% endif %}">
+        <div class="media-left">
+          {% if pub.video %}
+            <div class="media-embed">
+              <iframe src="{{ pub.video }}" allowfullscreen></iframe>
+            </div>
+          {% else %}
+            <img src="{{ pub.image | relative_url }}" alt="{{ pub.title }}">
+          {% endif %}
+        </div>
+
+        <div class="media-right">
+          <h3>{{ pub.title }}</h3>
+          <p class="meta">{{ pub.authors }} — <em>{{ pub.venue }}</em> ({{ pub.year }})</p>
+          <p>{{ pub.description }}</p>
+        </div>
+      </article>
+    {% endfor %}
+  </div>
+</section>

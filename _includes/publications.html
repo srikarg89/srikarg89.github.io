@@ -1,13 +1,14 @@
 <section id="publications" class="section section-alt">
   <div class="container section-inner">
-    <h2 class="section-title">Publications</h2>
+    <h2 class="section-title">Publications and Preprints</h2>
 
     {% for pub in site.data.publications %}
-      <article class="media-row {% if forloop.index0 | modulo:2 == 1 %}media-reverse{% endif %}">
+      <!-- <article class="media-row {% if forloop.index0 | modulo:2 == 0 %}media-reverse{% endif %}"> -->
+      <article class="media-row">
         <div class="media-left">
           {% if pub.video %}
             <div class="media-embed">
-              <iframe src="{{ pub.video }}" allowfullscreen></iframe>
+              <iframe src="{{ pub.video }}" allowfullscreen loading="lazy"></iframe>
             </div>
           {% else %}
             <img src="{{ pub.image | relative_url }}" alt="{{ pub.title }}">
@@ -15,8 +16,8 @@
         </div>
 
         <div class="media-right">
-          <h3>{{ pub.title }}</h3>
-          <p class="meta">{{ pub.authors }} — <em>{{ pub.venue }}</em> ({{ pub.year }})</p>
+          <h3><a href="{{ pub.website_link }}" target="_blank">{{ pub.title }}</a></h3>
+          <p class="meta">{{ pub.prev_authors }}<b>{{ site.name }}</b>{{ pub.after_authors }} — <em>{{ pub.venue }}</em></p>
           <p>{{ pub.description }}</p>
         </div>
       </article>

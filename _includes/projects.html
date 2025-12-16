@@ -3,7 +3,8 @@
     <h2 class="section-title">Projects</h2>
 
     {% for proj in site.data.projects %}
-      <article class="media-row {% if forloop.index0 | modulo:2 == 1 %}media-reverse{% endif %}">
+      <!-- <article class="media-row {% if forloop.index0 | modulo:2 == 0 %}media-reverse{% endif %}"> -->
+      <article class="media-row">
         <div class="media-left">
           {% if proj.video %}
             <div class="media-embed">
@@ -15,7 +16,13 @@
         </div>
 
         <div class="media-right">
-          <h3>{{ proj.title }}</h3>
+          {% if proj.website_link %}
+            <h3><a href="{{ proj.website_link }}">{{ proj.title }}</a></h3>
+          {% elsif proj.relative_link %}
+            <h3><a href="{{ proj.relative_link }}">{{ proj.title }}</a></h3>
+          {% else %}
+            <h3>{{ proj.title }}</h3>
+          {% endif %}          
           <p class="meta">{{ proj.short }}</p>
           <p>{{ proj.description }}</p>
         </div>

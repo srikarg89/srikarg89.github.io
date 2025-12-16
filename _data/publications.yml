@@ -1,0 +1,10 @@
+# _data/publications.yml
+- title: "LiveNet: Robust, Minimally Invasive Multi-Robot Control for Safe and Live Navigation in Constrained Environments"
+  prev_authors: ""
+  after_authors: ", Siddarth Lakkoju, Rohan Chandra"
+  venue: "Poster Presentation, L4DC 2025"
+  year: 2025
+  description: "This paper explores motion planning..."
+  file: "/assets/files/paper1.pdf"
+  video: "/assets/videos/Livenet.mp4"
+  website_link: https://livenet-uva.github.io/

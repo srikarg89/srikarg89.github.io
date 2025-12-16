@@ -143,3 +143,35 @@ body{
   .media-row{ flex-direction:column; }
   .media-left{ width:100%;}
 }
+
+/* Image / video aspect ratios */
+.w-25 {
+  width: 25%;
+  height: auto;
+}
+.w-40 {
+  width: 40%;
+  height: auto;
+}
+.w-50 {
+  width: 50%;
+  height: auto;
+}
+.w-60 {
+  width: 60%;
+  height: auto;
+}
+.w-75 {
+  width: 75%;
+  height: auto;
+}
+.w-90 {
+  width: 90%;
+  height: auto;
+}
+.w-100 {
+  width: 100%;
+  height: auto;
+}
+
+

@@ -13,8 +13,8 @@
 
 - title: "TreeDrone"
   short: Measuring the Canopy Cover of a Neighborhood
-  description: "This paper explores motion planning..."
-  image: "/assets/images/Frame58.png"
+  description: "Developed a photogrammetry algorithm to stitch images of a neighborhood captured by a drone with a downward-facing camera. Used the stitched images to measure the area's canopy cover."
+  image: "/assets/images/Tree Drone Frame.png"
   website_link: https://github.com/srikarg89/TreeDrone
 
 - title: "Coding Clash"

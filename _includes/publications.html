@@ -16,7 +16,11 @@
         </div>
 
         <div class="media-right">
-          <h3><a href="{{ pub.website_link }}" target="_blank">{{ pub.title }}</a></h3>
+          {% if pub.website_link %}
+            <h3><a href="{{ pub.website_link }}" target="_blank">{{ pub.title }}</a></h3>
+          {% else %}
+            <h3>{{ pub.title }}</h3>
+          {% endif %}
           <p class="meta">{{ pub.prev_authors }}<b>{{ site.name }}</b>{{ pub.after_authors }} — <em>{{ pub.venue }}</em></p>
           <p>{{ pub.description }}</p>
         </div>

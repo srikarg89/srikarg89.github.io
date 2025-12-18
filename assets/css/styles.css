@@ -68,6 +68,17 @@ a {
   border-bottom: 2px solid transparent;
 }
 
+.about-header {
+  display: flex;
+  align-items: center;   /* vertically center icons with header text */
+  gap: 12px;             /* horizontal spacing between header and icons */
+  justify-content: space-between; /* header left, icons right */
+}
+
+.social-icons svg {
+  width: 1.75em;   /* proportional to font size of h2 */
+  height: 1.75em;
+}
 
 
 .section{
@@ -98,8 +109,7 @@ a {
 .bio-right{ flex:1; min-width:280px; }
 
 .headshot{
-  width: 260px;
-  height: 260px;
+  height: 465px;
   object-fit:cover;
   border-radius: 8px;
   box-shadow: 0 6px 18px rgba(20,20,40,0.06);
@@ -107,8 +117,8 @@ a {
 }
 
 /* Social icons and downloads */
-.social-icons{ display:flex; gap:12px; align-items:center; }
-.social-icons .icon{ display:inline-flex; padding:8px; border-radius:8px; text-decoration:none; align-items:center; justify-content:center; }
+.social-icons{ display:flex; gap:40px; align-items:center; }
+.social-icons .icon{ display:inline-flex; padding:0px; border-radius:0px; text-decoration:none; align-items:center; justify-content:center; }
 .social-icons svg{ display:block; fill:var(--muted); }
 .social-icons a:hover svg{ fill:var(--accent); }
 

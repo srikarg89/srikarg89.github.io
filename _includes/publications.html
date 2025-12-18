@@ -1,6 +1,6 @@
 <section id="publications" class="section section-alt">
   <div class="container section-inner">
-    <h2 class="section-title">Publications and Preprints</h2>
+    <h2 class="section-title">Selected Publications</h2>
 
     {% for pub in site.data.publications %}
       <!-- <article class="media-row {% if forloop.index0 | modulo:2 == 0 %}media-reverse{% endif %}"> -->
@@ -8,7 +8,9 @@
         <div class="media-left">
           {% if pub.video %}
             <div class="media-embed">
-              <iframe src="{{ pub.video }}" allowfullscreen loading="lazy"></iframe>
+              <video controls>
+                <source src="{{ pub.video | relative_url }}" type="video/mp4">
+              </video>
             </div>
           {% else %}
             <img src="{{ pub.image | relative_url }}" alt="{{ pub.title }}">
@@ -21,8 +23,8 @@
           {% else %}
             <h3>{{ pub.title }}</h3>
           {% endif %}
-          <p class="meta">{{ pub.prev_authors }}<b>{{ site.name }}</b>{{ pub.after_authors }} — <em>{{ pub.venue }}</em></p>
-          <p>{{ pub.description }}</p>
+          <p class="meta">{% for author in pub.authors %}{% if forloop.last == true %} and {% endif %}{% if author.link %}<a href="{{ author.link }}">{{ author.name }}</a>{% elsif author.bold %}<b>{{ author.name }}</b>{% else %}{{ author.name }}{% endif %}{% if forloop.last == false %}, {% endif %}{% endfor %} — <em>{{ pub.venue }}</em></p>
+          <p class="section-content">{{ pub.description }}</p>
         </div>
       </article>
     {% endfor %}

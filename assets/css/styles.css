@@ -34,9 +34,41 @@ body{
   z-index: 50;
 }
 .site-header .container{ display:flex; align-items:center; justify-content:space-between; gap:12px; }
-.site-title { margin:0; font-size:1.05rem; letter-spacing: -0.02em; }
+.site-title { margin:0; font-size:1.25rem; letter-spacing: -0.02em; }
 .site-title a { text-decoration:none; color: inherit; }
-.top-nav a { margin-left: 14px; text-decoration:none; color:var(--muted); font-size:0.95rem; }
+.top-nav a { margin-left: 14px; text-decoration:none; color:var(--muted); font-size:1.15rem; }
+
+h3 a {
+  color: inherit;
+  text-decoration: none;
+  position: relative;
+  border-bottom: 2px solid transparent;
+}
+
+
+h3 a::after {
+  content: "↗";
+  font-size: 0.8em;
+  margin-left: 0.4em;
+  opacity: 0;
+  transition: opacity 0.15s ease;
+}
+
+h3 a:hover::after {
+  opacity: 0.6;
+}
+
+h3 a:hover {
+  border-bottom-color: currentColor;
+}
+
+a {
+  color: rgb(195, 0, 254);
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+}
+
+
 
 .section{
   padding: 48px 0;
@@ -93,6 +125,10 @@ body{
 
 /* Sections / media rows */
 .section-title{ margin-top:0; margin-bottom:18px; font-size:1.5rem; }
+.meta{ color:var(--muted); font-size:1.05rem; margin-top:6px; margin-bottom:6px; }
+.section-content{font-size:1.05rem; margin-top:6px; margin-bottom:6px;}
+
+
 .media-row{
   display:flex;
   gap: 24px;
@@ -118,7 +154,8 @@ body{
   overflow:hidden;
   box-shadow: 0 6px 18px rgba(20,20,40,0.06);
 }
-.media-embed iframe{
+.media-embed video,
+.media-embed iframe {
   position:absolute;
   top:0; left:0; width:100%; height:100%; border:0;
 }
@@ -126,11 +163,10 @@ body{
 .media-reverse{ flex-direction: row-reverse; }
 .media-reverse .media-left{ text-align:right; }
 
-.meta{ color:var(--muted); font-size:0.95rem; margin-top:6px; margin-bottom:6px; }
 .link{ color:var(--accent); font-weight:600; text-decoration:none; }
 
 .bio-text{ margin-top:0; margin-bottom:12px; font-size:1.05rem; }
-.bio-highlights{ padding-left: 1.25rem; color:var(--muted); }
+.bio-highlights{ padding-left: 1.25rem; color:var(--muted); font-size:1.05rem; font-weight: 600; }
 
 /* Footer */
 .site-footer{ border-top:1px solid #eee; padding:16px 0; text-align:center; background:white; }

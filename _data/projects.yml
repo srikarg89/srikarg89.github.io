@@ -2,12 +2,13 @@
 - title: "Cavalier Autonomous Racing"
   short: Motion Planning Lead for Autonomous Racing Team, 2nd at CES 2025 and 1st at IMS 2025
   description: "Developed planning algorithms for high-level race strategy and low-level vehicle control to overtake opponents while maintaining stable racecar control. Also created a data-driven simulation environment to benchmark planning and control algorithms on real-world scenarios."
-  video: "/assets/videos/Autonomous Overtake.mp4"
+  # video: "/assets/videos/fixed.mp4"
+  iframe_video: "https://www.youtube.com/embed/1W99UskyQqs?start=8135&end=8160"
   website_link: https://autonomousracing.dev/crew
 
 - title: "Cubie"
   short: A Rubik's Cube Solving Robot
-  description: "Designed, built, and programmed from scratch a robotic system capable of solving the Rubik's Cube in under 4 seconds. Also developed a 3D GUI to test and visualize cube solving algorithms."
+  description: "Designed, built, and programmed from scratch a robotic system that solves the Rubik's Cube in under 4 seconds. Also developed a 3D JS GUI to test and visualize cube solving algorithms."
   video: "/assets/videos/Cubie Fast Solve.mp4"
   relative_link: "cubie"
 
@@ -17,14 +18,14 @@
   image: "/assets/images/Tree Drone Frame.png"
   website_link: https://github.com/srikarg89/TreeDrone
 
-- title: "Coding Clash"
+- title: "CodingClash"
   short: A Real-Time Decentralized AI Strategy Game
-  description: "This paper explores motion planning..."
+  description: "Organized a custom real-time strategy game contest where 40+ users created Python AIs to compete against one another. Built a secure, scalable game engine and automated game scheduling to live update elo rankings."
   image: "/assets/images/CodingClash.gif"
   website_link: https://codingclash.github.io/
 
-- title: "Typeracer Bot"
-  short: Typing 400+ WPM and Passing all CAPTCHAs
-  description: "This paper explores motion planning..."
-  image: "/assets/images/Typeracer First Place.png"
-  website_link: https://github.com/srikarg89/TyperacerBot
+# - title: "Typeracer Bot"
+#   short: Typing 400+ WPM and Passing all CAPTCHAs
+#   description: "Programmed a bot that can type at speeds exceeding 400 WPM and successfully pass all CAPTCHAs."
+#   image: "/assets/images/Typeracer First Place.png"
+#   website_link: https://github.com/srikarg89/TyperacerBot

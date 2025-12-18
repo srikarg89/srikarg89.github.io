@@ -1,17 +1,26 @@
 # _data/publications.yml
 - title: "Scalable Algorithms with Provable Optimality Bounds for the Multiple Watchman Route Problem"
-  prev_authors: ""
-  after_authors: ", Ariel Felner, Jiaoyang Li"
+  authors:
+    - name: "Srikar Gouru"
+      bold: true
+    - name: "Ariel Felner"
+      link: https://felner.wixsite.com/home
+    - name: "Jiaoyang Li"
+      link: https://jiaoyangli.me/
   venue: "Submitted to ICAPS 2026"
   year: 2025
-  # description: "A robust neural network for planning safe, deadlock-free, minimally-invasive trajectories in constrained environments using higher-order CBFs and liveness constraints."
-  # file: "/assets/files/paper1.pdf"
-  # video: "/assets/videos/Livenet.mp4"
-  # website_link: https://livenet-uva.github.io/
+  description: "Search-based algorithms that optimally and suboptimally solve the Multiple Watchman Route Problem using cell pruning, heuristic enhancement, and distributed postprocessing techniques."
+  video: "/assets/videos/MWRP Example.mp4"
 
 - title: "LiveNet: Robust, Minimally Invasive Multi-Robot Control for Safe and Live Navigation in Constrained Environments"
   prev_authors: ""
-  after_authors: ", Siddarth Lakkoju, Rohan Chandra"
+  authors:
+    - name: "Srikar Gouru"
+      bold: true
+    - name: "Siddarth Lakkoju"
+      link: https://sidlakkoju.github.io/
+    - name: "Rohan Chandra"
+      link: https://cral-uva.github.io/people/rohan_chandra/index.html
   venue: "Poster Presentation, L4DC 2025"
   year: 2025
   description: "A robust neural network for planning safe, deadlock-free, minimally-invasive trajectories in constrained environments using higher-order CBFs and liveness constraints."

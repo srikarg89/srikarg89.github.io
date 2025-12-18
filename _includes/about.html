@@ -34,10 +34,10 @@
 
     <div class="bio-right">
       <h2>{{ site.name }}</h2>
-      <p class="bio-text">
+      <div class="bio-text">
         {% capture bio_content %}{% include bio.md %}{% endcapture %}
         {{ bio_content | markdownify }}
-      </p>
+      </div>
 
       <ul class="bio-highlights">
         <li>{{ site.role }}</li>

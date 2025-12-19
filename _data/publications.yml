@@ -21,9 +21,10 @@
       link: https://sidlakkoju.github.io/
     - name: "Rohan Chandra"
       link: https://cral-uva.github.io/people/rohan_chandra/index.html
-  venue: "Poster Presentation, L4DC 2025"
+  # venue: "Poster Presentation, L4DC 2025"
   year: 2025
   description: "A robust neural network for planning safe, deadlock-free, minimally-invasive trajectories in constrained environments using higher-order CBFs and liveness constraints."
   file: "/assets/files/paper1.pdf"
   video: "/assets/videos/Livenet.mp4"
   website_link: https://livenet-uva.github.io/
+  venue: In 7th Annual Learning for Dynamics and Control (L4DC) Conference, Proceedings of Machine Learning Research, 2025.

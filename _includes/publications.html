@@ -19,9 +19,9 @@
 
         <div class="media-right">
           {% if pub.website_link %}
-            <h3><a href="{{ pub.website_link }}" target="_blank">{{ pub.title }}</a></h3>
+            <h3 class="section-header"><a href="{{ pub.website_link }}">{{ pub.title }}</a></h3>
           {% else %}
-            <h3>{{ pub.title }}</h3>
+            <h3 class="section-header">{{ pub.title }}</h3>
           {% endif %}
           <p class="meta">{% for author in pub.authors %}{% if forloop.last == true %} and {% endif %}{% if author.link %}<a href="{{ author.link }}">{{ author.name }}</a>{% elsif author.bold %}<b>{{ author.name }}</b>{% else %}{{ author.name }}{% endif %}{% if forloop.last == false %}, {% endif %}{% endfor %} — <em>{{ pub.venue }}</em></p>
           <p class="section-content">{{ pub.description }}</p>

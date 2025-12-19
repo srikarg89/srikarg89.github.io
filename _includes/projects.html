@@ -28,11 +28,11 @@
 
         <div class="media-right">
           {% if proj.website_link %}
-            <h3><a href="{{ proj.website_link }}">{{ proj.title }}</a></h3>
+            <h3 class="section-header"><a href="{{ proj.website_link }}">{{ proj.title }}</a></h3>
           {% elsif proj.relative_link %}
-            <h3><a href="{{ proj.relative_link }}">{{ proj.title }}</a></h3>
+            <h3 class="section-header"><a href="{{ proj.relative_link }}">{{ proj.title }}</a></h3>
           {% else %}
-            <h3>{{ proj.title }}</h3>
+            <h3 class="section-header">{{ proj.title }}</h3>
           {% endif %}          
           <p class="meta">{{ proj.short }}</p>
           <p class="section-content">{{ proj.description }}</p>

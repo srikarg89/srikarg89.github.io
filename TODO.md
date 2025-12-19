@@ -1,4 +1,1 @@
-- Get better fonts
 - Make headshot part of background instead of it being a picture
-- Use link icon for the headers instead of having to hover
-- Increase font size and decrease side margins?

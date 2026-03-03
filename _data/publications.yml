@@ -7,9 +7,9 @@
       link: https://felner.wixsite.com/home
     - name: "Jiaoyang Li"
       link: https://jiaoyangli.me/
-  venue: "Submitted to ICAPS 2026"
-  year: 2025
-  description: "Search-based algorithms that optimally and suboptimally solve the Multiple Watchman Route Problem using cell pruning, heuristic enhancement, and distributed postprocessing techniques."
+  venue: "Oral Presentation at ICAPS 2026"
+  year: 2026
+  description: "Search-based algorithms for optimal and bounded suboptimal solutions of the Multiple Watchman Route Problem using cell pruning, heuristic enhancement, and distributed postprocessing techniques."
   video: "/assets/videos/MWRP Example.mp4"
 
 - title: "LiveNet: Robust, Minimally Invasive Multi-Robot Control for Safe and Live Navigation in Constrained Environments"
